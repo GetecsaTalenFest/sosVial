@@ -3,10 +3,10 @@ var nombreUsuario= document.getElementById('nombre').value;
 var apellidoUsuario= document.getElementById('pellido').value;
 var celularUsuario= document.getElementById('celular').value;
 var placasUsuario= document.getElementById('placas').value;
-var botonUsuario = document.getElementById('')
+var botonUsuario = document.getElementById('');
 
 var validarcelular= function(e){
-  if(e.keyCode !== 8 && (e.keyCode 48 =< || e.keyCode 57 >= )){
+  if(e.keyCode !== 8 && (e.keyCode =< 48|| e.keyCode >= 57)){
     //alert("digito valido")
     return true;
   }else{
@@ -25,7 +25,7 @@ var validarPlacas= function(){
 }
 
 var validarApellidoNombre= function(e){
-  if(e.keyCode !== 27 && (e.keyCode 67 =< || e.keyCode 90 >= ) || (e.keyCode 97 >= || e.keycode 122 < )){
+  if(e.keyCode !== 27 && (e.keyCode =< 67 || e.keyCode >= 90 ) || (e.keyCode >= 97 || e.keycode <  122 )){
     return true;
   }else{
     alert("invalido");
