@@ -5,6 +5,13 @@ var placas = $('#placas');
 var telefono = $('#celular');
 var btnSiguiente = $('#boton');
 
+var validarApellidoNombre= function(e){
+  if(e.keyCode !== 27 && (e.keyCode =< 67 || e.keyCode >= 90 ) || (e.keyCode >= 97 || e.keycode <  122 )){
+    return true;
+  }else{
+    alert("invalido");
+  }
+}
 
 var cargarPagina = function(){
 	nombre.keyup(validacionNombres);
