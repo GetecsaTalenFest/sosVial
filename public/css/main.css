@@ -2,11 +2,12 @@
 	background-color: #323A53;
 }
 .logo{
-	width: 90%;
-	margin-top: 20%;
+	width: 100%;
+	padding: 10%;
+	margin-top: 30%;
 }
 #logoNav{
-	width: 30%;
+	width: 20%;
 	margin-top: 3%;
 }
 nav{
