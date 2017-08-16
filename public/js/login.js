@@ -35,17 +35,34 @@ btnLogin.addEventListener('click', e =>{
 });
 
 /*agregamos al usuario a nuestra base de datos al mismo tiempo que los creamos, lograndolo llamando a esta función dentro del proceso de sign in*/
-/*function guardandoDatos(txtEmail,txtPassword) {
+function guardandoDatos(txtEmail,txtPassword) {
 	firebase.database().ref('usuarios').push({
     email: txtEmail,
     pass: txtPassword
   });
-  };*/
+	/*crearHistorial(????????)*/
+  };
 
+				   
+/*function crearHistorial(????){
+	const divCollection = document.getElementById("collection-div");
+	
+    const li = document.createElement("li");
+		
+	li.textContent = ???????????
+	
+   divCollection.appendChild(li);
+		
+}*/
+
+	
+
+/*
 const divObject = document.getElementById("object");
-const dbRefObject = firebase.database().ref().child('object');
+const dbRefObject = firebase.database().ref().child('listaUsuarios');
 
 dbRefObject.on('value' , snap => console.log(snap.val()));
+*/
 
 
 
